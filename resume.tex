@@ -1,0 +1,188 @@
+\documentclass[letterpaper, 11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[margin=0.5in]{geometry}
+\usepackage{titlesec}
+\usepackage[usenames, dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{tabularx}
+\usepackage{microtype}
+\usepackage{bm}
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\input{glyphtounicode}
+\pdfgentounicode=1
+\DisableLigatures{encoding = *, family = *}
+
+%----------FONT OPTIONS----------
+\usepackage{sansmathfonts}
+\renewcommand*\familydefault{\sfdefault}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\urlstyle{same}
+
+% Sectional formatting
+\titleformat{\section}{
+  \vspace{-4pt}\raggedright\Large
+}{}{0em}{}[\color{black} \titlerule{} \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+    \item \small {
+        {#1 \vspace{-3pt}}
+    }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.99\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.99\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textit{#2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.25in, label={\textbullet}]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-10pt}}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+%---------- HEADING ----------
+\begin{center}
+    \textbf{\Huge \scshape Shubham Nitin Joshi} \\
+    \href{mailto:shubham.joshi1507@gmail.com}{\underline{shubham.joshi1507@gmail.com}} $|$ 
+    \href{https://www.linkedin.com/in/shubham-j-993785120/}{\underline{linkedin.com/in/shubham-j-993785120}} $|$
+    \href{https://github.com/shubham1507}{\underline{github.com/shubham1507}} $|$
+    \href{tel:8390246938}{\underline{Phone: 8390246938}}
+\end{center}
+
+\vspace{-15pt}
+
+%----------- PROFILE -----------
+\section{Profile}
+\small{
+    Senior Software Engineer with 7 years of experience, including 3 years in full-stack development and 4 years specializing in DevOps. \\
+    Proficient in tools and technologies like Jenkins, Azure DevOps, GCP, Terraform, Ansible, Docker, and Kubernetes. Focused on advancing expertise in the DevOps domain. \\
+}
+
+\vspace{-15pt}
+
+%----------- SKILLS -----------
+\section{Skills}
+\begin{itemize}[leftmargin=0.25in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, SQL, JavaScript, Bash Shell} \\
+     \textbf{Libraries/Frameworks}{: Django, Django REST Framework, Angular} \\
+     \textbf{IaC}{: Terraform} \\
+     \textbf{Cloud \& DevOps}{: Microsoft Azure, GitHub, Jenkins, Docker, Kubernetes} \\
+     \textbf{Tools \& Databases}{: Git, Octopus Release, Linux (Ubuntu), PostgreSQL, Jira}
+    }}
+\end{itemize}
+
+\vspace{-25pt}
+
+%----------- WORK EXPERIENCE -----------
+\section{Work Experience}
+\resumeSubHeadingListStart{}
+    \resumeSubheading{TEK Systems, Pune}{25 Nov 2024 \textendash{} Present}
+        {Senior Software Engineer}{Hybrid}
+        \resumeItemListStart{}
+            \item[] \textbf{Project 1:HSBC - Platform enabler}
+            \begin{itemize}[leftmargin=0.5in, label={\textbullet}]
+                \item Designed,developing the \textbf{Automation}  stratergy.
+                
+            \end{itemize}
+        \resumeItemListEnd{}
+        
+    \vspace{10pt} % Space between the two blocks
+
+    \resumeSubheading{Hexaware Technologies Pvt Ltd, Pune}{ 13 Sept 2021 \textendash{} 22 Nov 2024}
+        {Senior Technical Analyst }{Remote}
+        \resumeItemListStart{}
+            \item[] \textbf{Project 1:AXA - Belgium}
+            \begin{itemize}[leftmargin=0.5in, label={\textbullet}]
+                \item Creation, maintanance and troubleshooting of CICD pipeline using Azure
+                Devops and Jenkins.
+                \item Automating the workflow using Python scripting.
+                \item Designed, developed the workflow along with on-boarding the customer
+                application on Azure Devops.
+                \item Taken care of POC’s for client using Azure Devops, Python, Jenkins, Ter-
+                raform and Docker
+            \end{itemize}
+        \resumeItemListEnd{}
+        
+
+        \vspace{10pt} % Space between the two blocks
+
+        \resumeSubheading{Creative Virtual Pvt Ltd, New Mumbai}{03 May 2021 \textendash{} 18 August 2021}
+            {Software Engineer}{Remote}
+            \resumeItemListStart{}
+                \item[] \textbf{Project 1: Admin panel}
+                \begin{itemize}[leftmargin=0.5in, label={\textbullet}]
+                    \item Design the backend database, develope the API’s and perform the Unit
+                    testing.
+                    \item Develop the frontend using Angular Framework.
+                    \item Deploying the web application to cloud environment.
+                    \item Publishing the Docker Image of web application for client
+                \end{itemize}
+            \resumeItemListEnd{}
+    
+            \vspace{10pt} % Space between the two blocks
+
+            \resumeSubheading{Terse Software Pvt Ltd, Pune}{14 Feb 2018 \textendash{} 30 April 2021}
+                { Software Engineer}{On site}
+                \resumeItemListStart{}
+                    \item[] \textbf{Project 1: Turtlebean & NPTI}
+                    \begin{itemize}[leftmargin=0.5in, label={\textbullet}]
+                        \item Responsible development of web as well as mobile application.
+                        \item Design and development of web as well as mobile application.
+                        \item Collaborate with stakeholders to refine the requirements.
+                        \item Provide e2e support and maintanance.
+                    \end{itemize}
+                \resumeItemListEnd{}
+        
+   
+    
+   
+\vspace{-17pt}
+
+%----------- PROJECTS -----------
+\section{Projects}
+\resumeSubHeadingListStart{}
+    \resumeProjectHeading{\textbf{Food Mess app} $|$ GitHub Repository: \underline{\url{https://github.com/shubham1507/FoodApp}}}{}
+    \vspace{10pt}
+        \resumeItemListStart{}
+            \resumeItem{Designed, developed the backend Apis using Django REST.}
+        \resumeItemListEnd{}
+\resumeSubHeadingListEnd{}
+
+\vspace{-17pt}
+
+%----------- EDUCATION -----------
+\section{Education}
+\resumeSubHeadingListStart{}
+    \resumeSubheading{MGM's \textendash{} College of Engineering}{Nanded, Maharashtra}
+        {\textbf{Bachelor of Engineering in Computer Science}}{August 2013 \textendash{} July 2016}
+\resumeSubHeadingListEnd{}
+
+% ---------------------------------------------
+\end{document}
