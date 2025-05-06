@@ -90,12 +90,14 @@
 \section{Skills}
 \begin{itemize}[leftmargin=0.25in, label={}]
     \small{\item{
-     \textbf{Languages}{: Python, SQL, JavaScript, Bash Shell} \\
+     \textbf{Languages}{: Python, SQL, JavaScript, Bash Shell, Go} \\
      \textbf{Libraries/Frameworks}{: Django, Django REST Framework, Angular} \\
-     \textbf{IaC}{: Terraform} \\
-     \textbf{Cloud \& DevOps}{: Microsoft Azure, GitHub, Jenkins, Docker, Kubernetes} \\
-     \textbf{Tools \& Databases}{: Git, Octopus Release, Linux (Ubuntu), PostgreSQL, Jira}
-    }}
+     \textbf{IaC}{: Terraform, Ansible} \\
+     \textbf{Cloud \& DevOps}{: Microsoft Azure/AWS/GCP, GitHub, Jenkins, Docker, Kubernetes} \\
+     \textbf{Tools \& Databases}{: Git, Octopus Release, Linux (Ubuntu), PostgreSQL, Jira} \\
+     \textbf{Monitoring tool}{: opentelemtry, AppDynamics} \\
+     \textbf{Platform engineering tool}{: Backstage IDP } \\
+    }}\\
 \end{itemize}
 
 \vspace{-25pt}
@@ -106,9 +108,19 @@
     \resumeSubheading{TEK Systems, Pune}{25 Nov 2024 \textendash{} Present}
         {Senior Software Engineer}{Hybrid}
         \resumeItemListStart{}
-            \item[] \textbf{Project 1:HSBC - Platform enabler}
+            \item[] \textbf{Project 1:HSBC - WSIT Caching As a Service}
             \begin{itemize}[leftmargin=0.5in, label={\textbullet}]
-                \item Designed,developing the \textbf{Automation}  stratergy.
+                \item As a SRE automation Engineer designed and developed pipeline using Jenkins and declarative \textbf groovy scripting.
+                \item Created modular ansible playbook to interact with pipeline to automate SRE activities,deployments and monitoring on 
+                hazelcast plaform(a caching platform like redies).
+                \item Used bash shell scripting and python for server configurations like node/management center upgradation.
+                \item For monitoring and alerting configured hazelcast eco-system with \textbf opentelemtry with AppDynamics.
+                \item Configured and implemented modular services using terraform for infrastructure as code.
+                \item Maintained production/non-production ansible templates with \textbf Ansible tower.
+                \item To reduce Jenkins-interaction with developers and stakeholders created YAML based templates and custom-plugins
+                 using \textbf backstage IDP (platform tool).
+                \item Contributed as individual for \textbf TPAM(PAR) reduction activities for SRE's using automation over hazelcast platform.
+                
                 
             \end{itemize}
         \resumeItemListEnd{}
@@ -120,13 +132,26 @@
         \resumeItemListStart{}
             \item[] \textbf{Project 1:AXA - Belgium}
             \begin{itemize}[leftmargin=0.5in, label={\textbullet}]
-                \item Creation, maintanance and troubleshooting of CICD pipeline using Azure
-                Devops and Jenkins.
-                \item Automating the workflow using Python scripting.
-                \item Designed, developed the workflow along with on-boarding the customer
-                application on Azure Devops.
-                \item Taken care of POC’s for client using Azure Devops, Python, Jenkins, Ter-
-                raform and Docker
+                \item As a DevOps engineer in Software Delivery Automation team contributed individually in SDLC process.
+                \item Created and maintaned CI/CD pipelines jenkins, Azure DevOps and AWS codebuild based on the applications category compliance.
+                \item In Jenkins used scripted as well declarative pipelines using shared libraries where as in azure devops used YAML and template
+                 based pipeline.
+                \item For automated deployment process a/c multi-environment , setup and configured github,Jenkins and Octopus deploy. Furthermore 
+                in Octopus deploy wrote custom-template using bash-shell and  Python.
+                \item Apart from the deployment  automate routine operational tasks such as database maintenance, backups, and infrastructure provisioning.
+                \item For  Automated infrastructure provisioning used cloud specific Terraform and  Ansible as per stackholders requirement.
+                \item Managed containerized applications using Docker and Kubernetes for efficient deployment and scaling.
+                \item Implemented auto-scaling and high availability strategies for cloud-native applications also Managed secure cloud networking 
+                (VPCs, firewalls, load balancers, VPNs)
+                \item Created Python scripts to automate the process of backup and tagging the archived sonarqube projects also using sonarqube Apis.
+                Also developed and enhanced several scripts for routine operational tasks.
+                \item As a Security & Compliance managed secrets and credentials securely using HashiCorp Vault/AWS Secrets Manager/Azure Key Vault,
+                conducted vulnerability scanning with enforced DevSecOps practices within CI/CD pipelines. Also implemented role-based access control (RBAC)
+                 and audit trails to ensure security compliance.
+                 \item In several applications, implemented and maintained pipelines on AWS using CodePipeline, CodeBuild and CodeDeploy.
+                 \item For promoting the application version to higher environment configured dititalAI tool.
+
+
             \end{itemize}
         \resumeItemListEnd{}
         
