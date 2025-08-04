@@ -1,0 +1,129 @@
+\documentclass[letterpaper, 11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[margin=0.5in]{geometry}
+\usepackage{titlesec}
+\usepackage[usenames, dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{tabularx}
+\usepackage{microtype}
+\usepackage{bm}
+
+\input{glyphtounicode}
+\pdfgentounicode=1
+\DisableLigatures{encoding = *, family = *}
+
+\usepackage{sansmathfonts}
+\renewcommand*\familydefault{\sfdefault}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\urlstyle{same}
+
+\titleformat{\section}{\vspace{-4pt}\raggedright\Large}{}{0em}{}[\color{black} \titlerule{} \vspace{-5pt}]
+
+\newcommand{\resumeItem}[1]{\item \small {#1 \vspace{-3pt}}}
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.99\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.99\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textit{#2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.25in, label={\textbullet}]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-10pt}}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+
+\begin{document}
+
+\begin{center}
+    \textbf{\Huge \scshape Manasi Kalidas Kulkarni} \\
+    \href{mailto:manasik866@gmail.com}{manasik866@gmail.com} $|$ (+91) 9284431683
+\end{center}
+
+\vspace{-10pt}
+
+\section*{Objective}
+A dedicated professional with 3 years of experience in IT, specialising in Cyber Security. My focus is on executing technical activities such as web application penetration testing, mobile application static and dynamic analysis, source code review, network and infrastructure testing, and API testing.
+
+\section*{Profile Summary}
+\begin{itemize}[leftmargin=*]
+    \item Proficient in executing application-level attacks such as XSS, SQL injection, CSRF, session-related attacks, etc.
+    \item Experienced in tools like Burp Suite Pro, HP Fortify, Nmap, SQLMap, Wireshark, Android Tamer.
+    \item Skilled in eliminating false positives and providing remediation recommendations.
+    \item Extensive experience with API, mobile, and network infrastructure testing.
+\end{itemize}
+
+\section*{Work Experience}
+\resumeSubHeadingListStart{}
+  \resumeSubheading{Pitney Bowes}{July 2023 -- Present}{Penetration Tester}{}
+  \resumeItemListStart{}
+    \resumeItem{Performed application security testing in the banking domain.}
+    \resumeItem{Managed end-to-end application security projects.}
+    \resumeItem{Performed infrastructure vulnerability assessments using Nessus.}
+    \resumeItem{Source code analysis with Mend and Snyk; dynamic analysis with Burp Suite.}
+    \resumeItem{Generated and presented remediation reports.}
+  \resumeItemListEnd{}
+
+  \vspace{6pt} % Spacing before next experience
+
+  \resumeSubheading{Network Intelligence Pvt. Ltd.}{Nov 2022 -- Apr 2023}{Senior Cyber Security Analyst}{}
+  \resumeItemListStart{}
+    \resumeItem{Web application penetration testing and vulnerability scanning.}
+    \resumeItem{Handled complete lifecycle of application security projects.}
+    \resumeItem{Infrastructure assessments using Nessus.}
+    \resumeItem{Code analysis using Der-Scanner; dynamic testing with Burp Suite.}
+    \resumeItem{Provided security reports with developer-focused remediation.}
+  \resumeItemListEnd{}
+
+  \vspace{6pt} % Spacing before next experience
+
+  \resumeSubheading{CDAC Hyderabad}{May 2021 -- May 2022}{Project Engineer}{}
+  \resumeItemListStart{}
+    \resumeItem{Conducted VAPT for web apps and infrastructure.}
+    \resumeItem{Source code analysis using HP Fortify; dynamic testing via Burp Suite.}
+    \resumeItem{Delivered vulnerability reports supporting remediation.}
+  \resumeItemListEnd{}
+\resumeSubHeadingListEnd{}
+
+\section*{Security Tools}
+\begin{itemize}[leftmargin=*]
+    \item \textbf{Mobile Security:} Android Tamer, MobSF, Genymotion
+    \item \textbf{OS Used:} Windows, Linux (Kali, Debian), iOS
+    \item \textbf{API Testing:} Postman, Astra, Burp Suite
+    \item \textbf{Web Scanners:} Burp Suite Pro, Acunetix
+    \item \textbf{Network Scanners:} Nessus, Nmap, Wireshark
+    \item \textbf{Code Review Tools:} HCL AppScan, HP Fortify, Der Scanner, Snyk, Mend
+\end{itemize}
+
+\section*{Education}
+\resumeSubHeadingListStart{}
+    \resumeSubheading{Mahatma Basweshwar College of Engineering}{2019}{Bachelor of Engineering in Electronics and Telecommunication}{}
+    \resumeSubheading{CDAC, Hyderabad}{Feb 2020 -- Feb 2021}{Postgraduate Diploma in IT Infrastructure, Systems, and Security}{}
+\resumeSubHeadingListEnd{}
+
+\section*{Projects}
+\resumeItemListStart{}
+    \resumeItem{Worked on multiple client projects across banking, e-commerce, and healthcare.}
+\resumeItemListEnd{}
+
+\section*{Declaration}
+I hereby declare that the information provided above is accurate to the best of my knowledge and I am responsible for its correctness.
+
+\vspace{10pt}
+\textbf{Manasi Kalidas Kulkarni}
+
+\end{document}

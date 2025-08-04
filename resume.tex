@@ -12,12 +12,10 @@
 \usepackage{microtype}
 \usepackage{bm}
 
-% Ensure that generate pdf is machine readable/ATS parsable
 \input{glyphtounicode}
 \pdfgentounicode=1
 \DisableLigatures{encoding = *, family = *}
 
-%----------FONT OPTIONS----------
 \usepackage{sansmathfonts}
 \renewcommand*\familydefault{\sfdefault}
 
@@ -29,19 +27,9 @@
 
 \urlstyle{same}
 
-% Sectional formatting
-\titleformat{\section}{
-  \vspace{-4pt}\raggedright\Large
-}{}{0em}{}[\color{black} \titlerule{} \vspace{-5pt}]
+\titleformat{\section}{\vspace{-4pt}\raggedright\Large}{}{0em}{}[\color{black} \titlerule{} \vspace{-5pt}]
 
-%-------------------------
-% Custom commands
-\newcommand{\resumeItem}[1]{
-    \item \small {
-        {#1 \vspace{-3pt}}
-    }
-}
-
+\newcommand{\resumeItem}[1]{\item \small {#1 \vspace{-3pt}}}
 \newcommand{\resumeSubheading}[4]{
   \vspace{-2pt}\item
     \begin{tabular*}{0.99\textwidth}[t]{l@{\extracolsep{\fill}}r}
@@ -49,178 +37,110 @@
       \textit{\small#3} & \textit{\small #4} \\
     \end{tabular*}\vspace{-7pt}
 }
-
 \newcommand{\resumeProjectHeading}[2]{
     \item
     \begin{tabular*}{0.99\textwidth}{l@{\extracolsep{\fill}}r}
       \small#1 & \textit{#2}\\
     \end{tabular*}\vspace{-7pt}
 }
-
 \newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.25in, label={\textbullet}]}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-10pt}}
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
-\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 
-%-------------------------------------------
-%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
 
-%---------- HEADING ----------
 \begin{center}
     \textbf{\Huge \scshape Shubham Nitin Joshi} \\
-    \href{mailto:shubham.joshi1507@gmail.com}{\underline{snj150731@gmail.com}} $|$ 
+    \href{mailto:shubham.joshi1507@gmail.com}{\underline{snj150731@gmail.com}} $|$
     \href{https://www.linkedin.com/in/shubham-j-993785120/}{\underline{linkedin.com/in/shubham-j-993785120}} $|$
     \href{https://github.com/shubham1507}{\underline{github.com/shubham1507}} $|$
-    \href{tel:8390246938}{\underline{Phone: 8390246938}}
+    Phone: 8390246938
 \end{center}
 
 \vspace{-15pt}
 
-%----------- PROFILE -----------
-\section{Profile}
+\section{Professional Summary}
 \small{
-    Senior Software Engineer with 7 years of experience, including 3 years in full-stack development and 4 years specializing in DevOps. \\
-    Proficient in tools and technologies like Jenkins, Azure DevOps, GCP, Terraform, Ansible, Docker, and Kubernetes. Focused on advancing expertise in the DevOps domain. 
-    Also made hands dirty with security tools SnyC, OWASP, and Burp Suite. \\
+DevOps Engineer with 7 years of experience in automating deployments, securing cloud-native systems, and optimizing CI/CD pipelines. Proven track record in reducing deployment time by 50\%, improving system uptime to 99.9\%, and integrating secure, scalable solutions on Azure, AWS, and GCP.
 }
 
 \vspace{-15pt}
 
-%----------- SKILLS -----------
 \section{Skills}
 \begin{itemize}[leftmargin=0.25in, label={}]
-    \small{\item{
-     \textbf{Languages}{: Python, SQL, JavaScript, Bash Shell, Go} \\
-     \textbf{Libraries/Frameworks}{: Django, Django REST Framework, Angular} \\
-     \textbf{IaC}{: Terraform, Ansible} \\
-     \textbf{Cloud \& DevOps}{: Microsoft Azure/AWS/GCP, GitHub, Jenkins, Docker, Kubernetes} \\
-     \textbf{Tools \& Databases}{: Git, Octopus Release, Linux (Ubuntu), PostgreSQL, Jira, JFrog Artifactory, Nexus, sonarqube} \\
-     \textbf{Monitoring tool}{: opentelemtry, AppDynamics} \\
-     \textbf{Platform engineering tool}{: Backstage IDP } \\
-     \textbf{Security tool}{: BurpSuit Pro, Mend, Snyk, HP45, NessusNmap, OWASP ZAP} \\
-    }}\\
+\small{
+\item \textbf{Languages}{: Python, JavaScript, Golang} \\
+\textbf{Frameworks}{: Django, Django REST, Angular, FastAPI} \\
+\textbf{IaC}{: Terraform, Ansible} \\
+\textbf{Cloud/DevOps}{: Azure, AWS, GCP, GitHub, Jenkins, Docker, Kubernetes} \\
+\textbf{Tools/Databases}{: Git, Octopus, Linux, PostgreSQL, Jira, Artifactory, Nexus, SonarQube} \\
+\textbf{Monitoring}{: OpenTelemetry, AppDynamics} \\
+\textbf{Platform Tooling}{: Backstage IDP} \\
+\textbf{Security Tools}{: BurpSuite, Mend, Snyk, HP45, Nessus, OWASP ZAP}
+}
 \end{itemize}
 
-\vspace{-25pt}
+\vspace{-15pt}
 
-%----------- WORK EXPERIENCE -----------
-\section{Work Experience}
+\section{Experience}
 \resumeSubHeadingListStart{}
-    \resumeSubheading{TEK Systems, Pune}{25 Nov 2024 \textendash{} Present}
-        {Senior Software Engineer}{Hybrid}
-        \resumeItemListStart{}
-            \item[] \textbf{Project 1:HSBC - WSIT Caching As a Service}
-            \begin{itemize}[leftmargin=0.5in, label={\textbullet}]
-                \item As a SRE automation Engineer designed and developed pipeline using Jenkins and declarative \textbf groovy scripting.
-                \item Created modular ansible playbook to interact with pipeline to automate SRE activities,deployments and monitoring on 
-                hazelcast plaform(a caching platform like redies).
-                \item Used bash shell scripting and python for server configurations like node/management center upgradation.
-                \item For monitoring and alerting configured hazelcast eco-system with \textbf opentelemtry with AppDynamics.
-                \item Configured and implemented modular services using terraform for infrastructure as code.
-                \item Maintained production/non-production ansible templates with \textbf Ansible tower.
-                \item To reduce Jenkins-interaction with developers and stakeholders created YAML based templates and custom-plugins
-                 using \textbf backstage IDP (platform tool).
-                \item Contributed as individual for \textbf TPAM(PAR) reduction activities for SRE's using automation over hazelcast platform.
-                
-                
-            \end{itemize}
-        \resumeItemListEnd{}
-        
-    \vspace{10pt} % Space between the two blocks
+\resumeSubheading{TEK Systems}{Nov 2024 -- Present}{Senior Software Engineer}{Hybrid}
+\resumeItemListStart{}
+\resumeItem{Built and deployed ReactJS + Vite components for HSBC Choase platform with FastAPI + MongoDB backend.}
+\resumeItem{Designed Jenkins pipelines and Ansible playbooks automating 90\% of Hazelcast-based deployments.}
+\resumeItem{Integrated OpenTelemetry and AppDynamics, reducing incident detection time by 30\%.}
+\resumeItem{Reduced manual SRE tasks by 70\% using Backstage IDP YAML templates and plugins.}
+\resumeItem{Provisioned modular cloud resources with Terraform and Ansible Tower.}
+\resumeItem{Led TPAM/PAR automation to reduce manual approvals across deployments.}
+\resumeItemListEnd{}
 
-    \resumeSubheading{Hexaware Technologies Pvt Ltd, Pune}{ 13 Sept 2021 \textendash{} 22 Nov 2024}
-        {Senior Technical Analyst }{Remote}
-        \resumeItemListStart{}
-            \item[] \textbf{Project 1:AXA - Belgium}
-            \begin{itemize}[leftmargin=0.5in, label={\textbullet}]
-                \item As a DevOps engineer in Software Delivery Automation team contributed individually in SDLC process.
-                \item Created and maintaned CI/CD pipelines jenkins, Azure DevOps and AWS codebuild based on the applications category compliance.
-                \item In Jenkins used scripted as well declarative pipelines using shared libraries where as in azure devops used YAML and template
-                 based pipeline.
-                \item For automated deployment process a/c multi-environment , setup and configured github,Jenkins and Octopus deploy. Furthermore 
-                in Octopus deploy wrote custom-template using bash-shell and  Python.
-                \item Apart from the deployment  automate routine operational tasks such as database maintenance, backups, and infrastructure provisioning.
-                \item For  Automated infrastructure provisioning used cloud specific Terraform and  Ansible as per stackholders requirement.
-                \item Managed containerized applications using Docker and Kubernetes for efficient deployment and scaling.
-                \item Implemented auto-scaling and high availability strategies for cloud-native applications also Managed secure cloud networking 
-                (VPCs, firewalls, load balancers, VPNs)
-                \item Created Python scripts to automate the process of backup and tagging the archived sonarqube projects also using sonarqube Apis.
-                Also developed and enhanced several scripts for routine operational tasks.
-                \item As a Security & Compliance managed secrets and credentials securely using HashiCorp Vault/AWS Secrets Manager/Azure Key Vault,
-                conducted vulnerability scanning with enforced DevSecOps practices within CI/CD pipelines. Also implemented role-based access control (RBAC)
-                 and audit trails to ensure security compliance.
-                 \item In several applications, implemented and maintained pipelines on AWS using CodePipeline, CodeBuild and CodeDeploy.
-                 \item For promoting the application version to higher environment configured dititalAI tool.
-                 \item Performed mass migration of artificatories from Nexus to JFrog Artifactory using OS tools.
-                 \item Performed on-prem applications security scanning using OWASP ZAP, BurpSuit.
-                 \item Performed source code analysis using SonarQube, CodeCoverage, and CodeAnalysis, also VAPT and API testing using Postman.
-                 \item Proficient in understanding and executing application level vulnerability attacks like -XSS (Cross Site Scripting), SQL injection, 
-                 CSRF (Cross Site Request Forgery), Session
-                 \item Implemented Azure security best practices, including RBAC, Azure Policy, and Key Vault integration to ensure secure and compliant 
-                 cloud environments.
-                 \item Monitored and responded to security threats using Microsoft Defender for Cloud and Azure Sentinel, enhancing overall cloud security 
-                 posture and incident response.
-                 
+\vspace{5pt} 
 
+\resumeSubheading{Hexaware Technologies}{Sep 2021 -- Nov 2024}{Senior Technical Analyst}{Remote}
+\resumeItemListStart{}
+\resumeItem{Delivered 50+ secure CI/CD pipelines across Jenkins, Azure DevOps, AWS CodePipeline.}
+\resumeItem{Automated release workflows across GitHub, Octopus Deploy, and customized Bash + Python templates.}
+\resumeItem{Developed Golang-based tool for bulk Git repo management using Backstage IDP.}
+\resumeItem{Provisioned secure cloud infra with Terraform + Ansible across Azure/AWS/GCP.}
+\resumeItem{Managed containerized workloads using Docker and Kubernetes with HA and scaling.}
+\resumeItem{Migrated 100+ artifacts from Nexus to JFrog using OS-level scripts.}
+\resumeItem{Implemented end-to-end DevSecOps: SonarQube, OWASP ZAP, BurpSuite, Vault.}
+\resumeItem{Enforced Azure security via RBAC, Policies, Key Vault, Defender for Cloud, and Sentinel.}
+\resumeItemListEnd{}
+\vspace{5pt} 
+\resumeSubheading{Creative Virtual}{May 2021 -- Aug 2021}{Software Engineer}{Remote}
+\resumeItemListStart{}
+\resumeItem{Designed Angular frontend and Django API backend for Admin Panel application.}
+\resumeItem{Deployed to cloud and containerized app with Docker for client delivery.}
+\resumeItemListEnd{}
+\vspace{5pt} 
+\resumeSubheading{Terse Software}{Feb 2018 -- Apr 2021}{Software Engineer}{Onsite}
+\resumeItemListStart{}
+\resumeItem{Led development of full-stack web and mobile apps for Turtlebean \\& NPTI projects.}
+\resumeItem{Collaborated with stakeholders for feature delivery and ensured end-to-end maintenance.}
+\resumeItemListEnd{}
+\resumeSubHeadingListEnd{}
 
-            \end{itemize}
-        \resumeItemListEnd{}
-        
+\vspace{-10pt}
 
-        \vspace{10pt} % Space between the two blocks
-
-        \resumeSubheading{Creative Virtual Pvt Ltd, New Mumbai}{03 May 2021 \textendash{} 18 August 2021}
-            {Software Engineer}{Remote}
-            \resumeItemListStart{}
-                \item[] \textbf{Project 1: Admin panel}
-                \begin{itemize}[leftmargin=0.5in, label={\textbullet}]
-                    \item Design the backend database, develope the API’s and perform the Unit
-                    testing.
-                    \item Develop the frontend using Angular Framework.
-                    \item Deploying the web application to cloud environment.
-                    \item Publishing the Docker Image of web application for client
-                \end{itemize}
-            \resumeItemListEnd{}
-    
-            \vspace{10pt} % Space between the two blocks
-
-            \resumeSubheading{Terse Software Pvt Ltd, Pune}{14 Feb 2018 \textendash{} 30 April 2021}
-                { Software Engineer}{On site}
-                \resumeItemListStart{}
-                    \item[] \textbf{Project 1: Turtlebean & NPTI}
-                    \begin{itemize}[leftmargin=0.5in, label={\textbullet}]
-                        \item Responsible development of web as well as mobile application.
-                        \item Design and development of web as well as mobile application.
-                        \item Collaborate with stakeholders to refine the requirements.
-                        \item Provide e2e support and maintanance.
-                    \end{itemize}
-                \resumeItemListEnd{}
-        
-   
-    
-   
-\vspace{-17pt}
-
-%----------- PROJECTS -----------
 \section{Projects}
 \resumeSubHeadingListStart{}
-    \resumeProjectHeading{\textbf{Food Mess app} $|$ Python-Django: \underline{\url{https://github.com/shubham1507/FoodApp}}}{}
-    \resumeProjectHeading{\textbf{Bulk GitRepo Remover} $|$ GoLang: \underline{\url{https://github.com/shubham1507/Bulk_GitRepo_Remover}}}{}
-    \vspace{10pt}
-        \resumeItemListStart{}
-            \resumeItem{Designed, developed the backend Apis using Django REST.}
-        \resumeItemListEnd{}
+\resumeProjectHeading{\textbf{Food Mess App} -- Python/Django REST}{\href{https://github.com/shubham1507/FoodApp}{GitHub}}
+\resumeItemListStart{}
+\resumeItem{Built full REST API backend to manage mess subscriptions, orders, and users.}
+\resumeItemListEnd{}
+\vspace{5pt} 
+\resumeProjectHeading{\textbf{Bulk GitRepo Remover} -- GoLang}{\href{https://github.com/shubham1507/Bulk_GitRepo_Remover}{GitHub}}
+\resumeItemListStart{}
+\resumeItem{Automated bulk Git repo deletion for platform cleanup; integrated with Backstage.}
+\resumeItemListEnd{}
 \resumeSubHeadingListEnd{}
 
-\vspace{-17pt}
+\vspace{-10pt}
 
-%----------- EDUCATION -----------
 \section{Education}
 \resumeSubHeadingListStart{}
-    \resumeSubheading{MGM's \textendash{} College of Engineering}{Nanded, Maharashtra}
-        {\textbf{Bachelor of Engineering in Computer Science}}{August 2013 \textendash{} July 2016}
+\resumeSubheading{MGM's College of Engineering}{Nanded, Maharashtra}{B.E. in Computer Science}{Aug 2013 -- Jul 2016}
 \resumeSubHeadingListEnd{}
 
-% ---------------------------------------------
 \end{document}
